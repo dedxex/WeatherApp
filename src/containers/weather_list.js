@@ -9,8 +9,8 @@ export class WeatherList extends Component {
         const temp=_.map(cityData.list.map(weather=>weather.main.temp), (temp)=>temp -273);
         const pressure=cityData.list.map(weather=>weather.main.pressure);
         const humidity=cityData.list.map(weather=>weather.main.humidity);
-        console.log(temp,cityName);
-        console.log(cityData);
+        // console.log(temp,cityName);
+        // console.log(cityData);
         return (
                 <tr key={cityName}>
                 <td><Map class="cmap" name={name} lng={cityData.city.coord.lon} lat={cityData.city.coord.lat} /></td>
